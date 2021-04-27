@@ -22,6 +22,9 @@
 --
 --
 
+-- use midigrid
+local grid = util.file_exists(_path.code.."midigrid") and include "midigrid/lib/midigrid" or grid
+
 local g = grid.connect()
 
 local fileselect = require 'fileselect'
